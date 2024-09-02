@@ -24,7 +24,8 @@ input: nums = [1,1,1,3,3,4,3,2,4,2]
 output: true
 
 ### solution
-[](./)
+[solution](./src/main/java/dev/nj/solutions/ContainsDuplicate.java)
+[test](./src/test/java/dev/nj/solutions/ContainsDuplicateTests.java)
 
 </details>
 
