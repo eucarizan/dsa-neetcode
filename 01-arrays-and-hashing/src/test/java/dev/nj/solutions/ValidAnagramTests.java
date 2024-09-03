@@ -22,4 +22,28 @@ public class ValidAnagramTests {
         assertThat(ValidAnagram.isAnagram(s, t)).isFalse();
     }
 
+    @Test
+    public void testTEmpty() {
+        String s = "empty";
+        String t = "";
+
+        assertThat(ValidAnagram.isAnagram(s, t)).isFalse();
+    }
+
+    @Test
+    public void testSingleCharNotAnagram() {
+        String s = "a";
+        String t = "b";
+
+        assertThat(ValidAnagram.isAnagram(s, t)).isFalse();
+    }
+
+    @Test
+    public void test2ndWordLonger() {
+        String s = "a";
+        String t = "ab";
+
+        assertThat(ValidAnagram.isAnagram(s, t)).isFalse();
+    }
+
 }
