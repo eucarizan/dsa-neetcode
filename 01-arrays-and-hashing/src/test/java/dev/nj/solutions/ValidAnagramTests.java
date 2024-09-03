@@ -46,4 +46,28 @@ public class ValidAnagramTests {
         assertThat(ValidAnagram.isAnagram(s, t)).isFalse();
     }
 
+    @Test
+    public void testSingleCharAnagram() {
+        String s = "a";
+        String t = "a";
+
+        assertThat(ValidAnagram.isAnagram(s, t)).isTrue();
+    }
+
+    @Test
+    public void testLargeInputAnagram() {
+        String s = "abcdefghijklmnopqrstuvwxyz".repeat(1000);
+        String t = "zyxwvutsrqponmlkjihgfedcba".repeat(1000);
+
+        assertThat(ValidAnagram.isAnagram(s, t)).isTrue();
+    }
+
+    @Test
+    public void testLargeInputNotAnagram() {
+        String s = "abcdefghijklmnopqrstuvwxyz".repeat(1000);
+        String t = "zyxwvutsrqponmlkjihgfedcbx".repeat(1000);
+
+        assertThat(ValidAnagram.isAnagram(s, t)).isFalse();
+    }
+
 }
