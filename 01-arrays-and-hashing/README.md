@@ -76,7 +76,7 @@ You may assume that each input would have **_exactly_ one solution**, and you ma
 
 You can return the answer in any order.
 
-## examples
+### examples
 example 1:
 input: nums = [2,7,11,15], target = 9
 output: [0,1]
@@ -90,7 +90,7 @@ example 3:
 input: nums = [3,3], target = 6
 output: [0,1]
 
-## constraints
+### constraints
 - `2 <= nums.length <= 10^4^`
 - `-10^9^ <= nums[i] <= 10^9^`
 - `-10^9^ <= target <= 10^9^` 
