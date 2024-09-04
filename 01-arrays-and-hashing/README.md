@@ -52,13 +52,54 @@ input: s = "rat", t = "car"
 output: false
 
 ### contraints
-- `1 <= s.length, t.length <= 5 * 10<sup>4</sup>`
+- `1 <= s.length, t.length <= 5 * 10^4^`
 - `s` and `t` consist of lowercase English letters.
 
 ### solution
 [solution](./src/main/java/dev/nj/solutions/ValidAnagram.java)
 <br/>
 [test](./src/test/java/dev/nj/solutions/ValidAnagramTests.java)
+
+</details>
+
+<hr/>
+
+## two sum
+- easy
+<details>
+<summary>return indices of two numbers sum up to target</summary>
+
+### description
+Given an array of integers `nums` and an integer `target`, return *indices of the two numbers such that they add up to* *`target`*.
+
+You may assume that each input would have **_exactly_ one solution**, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+## examples
+example 1:
+input: nums = [2,7,11,15], target = 9
+output: [0,1]
+explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+
+example 2:
+input: nums = [3,2,4], target = 6
+output: [1,2]
+
+example 3:
+input: nums = [3,3], target = 6
+output: [0,1]
+
+## constraints
+- `2 <= nums.length <= 10^4^`
+- `-10^9^ <= nums[i] <= 10^9^`
+- `-10^9^ <= target <= 10^9^` 
+- **Only one valid answer exists**
+
+### solution
+[solution](./src/main/java/dev/nj/solutions/TwoSum.java)
+<br/>
+[test](./src/test/java/dev/nj/solutions/TwoSumTests.java)
 
 </details>
 
@@ -81,9 +122,11 @@ output: false
 <br/>
 [test](./src/test/java/dev/nj/solutions/)
 
+### constraints
+- 
+
 </details>
 
 <hr/>
+
 -->
-
-
