@@ -16,7 +16,7 @@ public class GroupAnagramTests {
 
         List<List<String>> expected = List.of(List.of("a"));
 
-        assertThat(GroupAnagram.method(strs)).isEqualTo(expected);
+        assertThat(GroupAnagram.groupAnagrams(strs)).isEqualTo(expected);
     }
 
     @Test
@@ -29,7 +29,57 @@ public class GroupAnagramTests {
                 List.of("ate", "eat", "tea")
         );
 
-        List<List<String>> output = GroupAnagram.method(strs);
+        List<List<String>> output = GroupAnagram.groupAnagrams(strs);
+        assertThat(compareLists(output, expected)).isTrue();
+    }
+
+    @Test
+    public void testTwoWords() {
+        String[] strs = {"ac", "c"};
+
+        List<List<String>> expected = List.of(
+                List.of("c"),
+                List.of("ac")
+        );
+
+        List<List<String>> output = GroupAnagram.groupAnagrams(strs);
+        assertThat(compareLists(output, expected)).isTrue();
+    }
+
+    
+    @Test
+    public void testEmptyAndWord() {
+        String[] strs = {"", "b"};
+
+        List<List<String>> expected = List.of(
+                List.of(""),
+                List.of("b")
+        );
+
+        List<List<String>> output = GroupAnagram.groupAnagrams(strs);
+        assertThat(compareLists(output, expected)).isTrue();
+    }
+
+
+    @Test
+    public void testMethod() {
+        String[] strs = {"eat","tea","tan","ate","nat","bat","ac","bd","aac","bbd","aacc","bbdd","acc","bdd"};
+
+        List<List<String>> expected = List.of(
+                List.of("bdd"),
+                List.of("bat"),
+                List.of("nat","tan"),
+                List.of("ac"),
+                List.of("ate","eat","tea"),
+                List.of("bd"),
+                List.of("aac"),
+                List.of("bbd"),
+                List.of("aacc"),
+                List.of("bbdd"),
+                List.of("acc")
+        );
+
+        List<List<String>> output = GroupAnagram.groupAnagrams(strs);
         assertThat(compareLists(output, expected)).isTrue();
     }
 
