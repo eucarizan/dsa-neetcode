@@ -16,21 +16,20 @@ Given an integer array `nums`, return `true` if any value appears **at least twi
 
 ### examples
 example 1:
-input: nums = [1,2,3,1]
-output: true
+- input: nums = [1,2,3,1]
+- output: true
 
 example 2:
-input: nums = [1,2,3,4]
-output: false
+- input: nums = [1,2,3,4]
+- output: false
 
 example 3:
-input: nums = [1,1,1,3,3,4,3,2,4,2]
-output: true
+- input: nums = [1,1,1,3,3,4,3,2,4,2]
+- output: true
 
 ### solution
-[solution](./src/main/java/dev/nj/solutions/ContainsDuplicate.java)
-<br/>
-[test](./src/test/java/dev/nj/solutions/ContainsDuplicateTests.java)
+- [solution](./src/main/java/dev/nj/solutions/ContainsDuplicate.java)
+- [test](./src/test/java/dev/nj/solutions/ContainsDuplicateTests.java)
 
 </details>
 
@@ -46,21 +45,20 @@ Given two strings `s` and `t`, return `true` *if* `t` *is an anagram of* `s`, *a
 
 ### examples
 example 1:
-input: s = "anargram", t = "nagaram"
-output: true
+- input: s = "anargram", t = "nagaram"
+- output: true
 
 example 2:
-input: s = "rat", t = "car"
-output: false
+- input: s = "rat", t = "car"
+- output: false
 
 ### contraints
 - `1 <= s.length, t.length <= 5 * 10^4`
 - `s` and `t` consist of lowercase English letters.
 
 ### solution
-[solution](./src/main/java/dev/nj/solutions/ValidAnagram.java)
-<br/>
-[test](./src/test/java/dev/nj/solutions/ValidAnagramTests.java)
+- [solution](./src/main/java/dev/nj/solutions/ValidAnagram.java)
+- [test](./src/test/java/dev/nj/solutions/ValidAnagramTests.java)
 
 </details>
 
@@ -80,17 +78,17 @@ You can return the answer in any order.
 
 ### examples
 example 1:
-input: nums = [2,7,11,15], target = 9
-output: [0,1]
-explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+- input: nums = [2,7,11,15], target = 9
+- output: [0,1]
+- explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
 example 2:
-input: nums = [3,2,4], target = 6
-output: [1,2]
+- input: nums = [3,2,4], target = 6
+- output: [1,2]
 
 example 3:
-input: nums = [3,3], target = 6
-output: [0,1]
+- input: nums = [3,3], target = 6
+- output: [0,1]
 
 ### constraints
 - `2 <= nums.length <= 10^4`
@@ -99,9 +97,8 @@ output: [0,1]
 - **Only one valid answer exists**
 
 ### solution
-[solution](./src/main/java/dev/nj/solutions/TwoSum.java)
-<br/>
-[test](./src/test/java/dev/nj/solutions/TwoSumTests.java)
+- [solution](./src/main/java/dev/nj/solutions/TwoSum.java)
+- [test](./src/test/java/dev/nj/solutions/TwoSumTests.java)
 
 </details>
 
@@ -116,21 +113,21 @@ Given an array of strings `strs`, group the anagrams together. You can return th
 
 ## examples
 example 1:
-input: strs = ["eat","tea","tan","ate","nat","bat"]
-output: [["bat"],["nat","tan"],["ate","eat","tea"]]
+- input: strs = ["eat","tea","tan","ate","nat","bat"]
+- output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 
-explanation:
-- There is no string in strs that can be rearranged to form "bat".
-- The strings "nat" and "tan" are anagrams as they can be rearranged to form each other.
-- The strings "ate", "eat", and "tea" are anagrams as they can be rearranged to form each other.
+- explanation:
+    - There is no string in strs that can be rearranged to form "bat".
+    - The strings "nat" and "tan" are anagrams as they can be rearranged to form each other.
+    - The strings "ate", "eat", and "tea" are anagrams as they can be rearranged to form each other.
 
 example 2:
-input: strs = [""]
-output: [[""]]
+- input: strs = [""]
+- output: [[""]]
 
 example 3:
-input: strs = ["a"]
-output: [["a"]]
+- input: strs = ["a"]
+- output: [["a"]]
 
 ### constraints
 - `1 <= strs.length <= 10^4` 
@@ -138,9 +135,8 @@ output: [["a"]]
 - `strs[i]` consists of lowercase English letters.
 
 ### solution
-[solution](./src/main/java/dev/nj/solutions/GroupAnagram.java)
-<br/>
-[test](./src/test/java/dev/nj/solutions/GroupAnagramTests.java)
+- [solution](./src/main/java/dev/nj/solutions/GroupAnagram.java)
+- [test](./src/test/java/dev/nj/solutions/GroupAnagramTests.java)
 
 </details>
 
