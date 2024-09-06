@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class GroupAnagram {
 
@@ -36,18 +37,25 @@ public class GroupAnagram {
         return new ArrayList<>(map.values());
     }
 
+    public static List<List<String>> groupAnagramsStream(String[] strs) {
+        return Arrays.stream(strs)
+                .collect(Collectors.groupingBy(
+                        s -> {
+                            int[] count = new int[26];
+                            s.chars().forEach(c -> count[c - 'a']++);
+
+                            return Arrays.stream(count)
+                                    .mapToObj(String::valueOf)
+                                    .collect(Collectors.joining("#"));
+                        }
+                )).values().stream()
+                .collect(Collectors.toList());
+    }
+
     public static List<List<String>> groupAnagramsMNLogN(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();
 
         for (String str : strs) {
-            /*
-            int sum = 0;
-
-            for (int i = 0; i < str.length(); i++) {
-                char ch = str.charAt(i);
-                sum += ch - 'a' - 1;
-            }
-            */
             char[] chars = str.toCharArray();
             Arrays.sort(chars);
             String sortedWord = new String(chars);
