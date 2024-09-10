@@ -5,6 +5,7 @@
   - [valid anagram](#valid-anagram)
   - [two sum](#two-sum)
   - [group anagrams](#group-anagrams)
+  - [top k frequent elements](#top-k-frequent-elements)
 
 ## contains duplicate 
 - easy
@@ -142,6 +143,37 @@ example 3:
 
 <hr/>
 
+## top k frequent elements
+<details>
+<summary>return the most frequent elements</summary>
+
+### description
+Given an integer array `nums` and an integer `k`, return the `k` most *frequent elements*. You may return the answer in **any order**.
+
+## examples
+example 1:
+- input: nums = [1,1,1,2,2,3], k = 2
+- output: [1,2]
+
+example 2:
+- input: nums = [1], k = 1
+- output: [1]
+
+### constraints
+- `1 <= nums.length <= 10^5`
+- `-10^4 <= nums[1] <= 10^4`
+- `k` is in the range `[1, the number of unique elements in the array]`
+- it is **guaranteed** that the answer is **unique**
+
+### solution
+[solution](./src/main/java/dev/nj/solutions/TopKFrequent.java)
+<br/>
+[test](./src/test/java/dev/nj/solutions/TopKFrequentTests.java)
+
+</details>
+
+<hr/>
+
 [<<](../README.md)
 <!--
 :%s/\(Sample \(Input\|Output\) \d:\)\n\(.*\)/```\r\r**\1**\r```\3/gc
@@ -153,14 +185,17 @@ example 3:
 ### description
 
 ## examples
-
-### solution
-[solution](./src/main/java/dev/nj/solutions/)
-<br/>
-[test](./src/test/java/dev/nj/solutions/)
+example1:
+- input:
+- output:
 
 ### constraints
 - 
+
+### solution
+[solution](./src/main/java/dev/nj/solutions/Clazz.java)
+<br/>
+[test](./src/test/java/dev/nj/solutions/ClazzTests.java)
 
 </details>
 

@@ -12,7 +12,7 @@ public class GroupAnagram {
     public static List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();
 
-        for (String s: strs) {
+        for (String s : strs) {
             int[] count = new int[26];
 
             for (char c : s.toCharArray()) {
@@ -26,7 +26,7 @@ public class GroupAnagram {
             }
 
             String key = sb.toString();
-            
+
             if (!map.containsKey(key)) {
                 map.put(key, new ArrayList<>());
             }
@@ -38,7 +38,7 @@ public class GroupAnagram {
     }
 
     public static List<List<String>> groupAnagramsStream(String[] strs) {
-        return Arrays.stream(strs)
+        return new ArrayList<>(Arrays.stream(strs)
                 .collect(Collectors.groupingBy(
                         s -> {
                             int[] count = new int[26];
@@ -48,8 +48,7 @@ public class GroupAnagram {
                                     .mapToObj(String::valueOf)
                                     .collect(Collectors.joining("#"));
                         }
-                )).values().stream()
-                .collect(Collectors.toList());
+                )).values());
     }
 
     public static List<List<String>> groupAnagramsMNLogN(String[] strs) {
