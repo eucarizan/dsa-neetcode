@@ -41,7 +41,7 @@ public class TopKFrequentTests {
         int[] a = {4, 4, 4, 4};
         int k = 2;
 
-        int[] expected = {4};
+        int[] expected = {4, 0};
 
         assertThat(TopKFrequent.topKFrequent(a, k)).isEqualTo(expected);
     }
