@@ -6,6 +6,7 @@
   - [two sum](#two-sum)
   - [group anagrams](#group-anagrams)
   - [top k frequent elements](#top-k-frequent-elements)
+  - [encode and decode](#encode-and-decode)
 
 ## contains duplicate 
 - easy
@@ -106,6 +107,7 @@ example 3:
 <hr/>
 
 ## group anagrams
+- medium
 <details>
 <summary>group anagrams together</summary>
 
@@ -144,6 +146,7 @@ example 3:
 <hr/>
 
 ## top k frequent elements
+- medium
 <details>
 <summary>return the most frequent elements</summary>
 
@@ -166,9 +169,38 @@ example 2:
 - it is **guaranteed** that the answer is **unique**
 
 ### solution
-[solution](./src/main/java/dev/nj/solutions/TopKFrequent.java)
-<br/>
-[test](./src/test/java/dev/nj/solutions/TopKFrequentTests.java)
+- [solution](./src/main/java/dev/nj/solutions/TopKFrequent.java)
+- [test](./src/test/java/dev/nj/solutions/TopKFrequentTests.java)
+
+</details>
+
+<hr/>
+
+## encode and decode
+- medium
+<details>
+<summary>string encode and decode</summary>
+
+### description
+Design an algorithm to encode a list of strings to a single string. The encoded string is then decoded back to the original list of strings.
+
+## examples
+example1:
+- input: ["neet", "code", "love", "you"]
+- output: ["neet", "code", "love", "you"]
+
+example2:
+- input: ["we", "say", ":", "yes"]
+- output: ["we", "say", ":", "yes"]
+
+### constraints
+- `0 <= strs.length < 100`
+- `0 <= strs[i].length < 200`
+- `strs[i]` contains only UTF-8 characters
+
+### solution
+- [solution](./src/main/java/dev/nj/solutions/EncodeDecode.java)
+- [test](./src/test/java/dev/nj/solutions/EncodeDecodeTests.java)
 
 </details>
 
@@ -179,6 +211,7 @@ example 2:
 :%s/\(Sample \(Input\|Output\) \d:\)\n\(.*\)/```\r\r**\1**\r```\3/gc
 
 ## 
+- easy
 <details>
 <summary></summary>
 
@@ -193,9 +226,8 @@ example1:
 - 
 
 ### solution
-[solution](./src/main/java/dev/nj/solutions/Clazz.java)
-<br/>
-[test](./src/test/java/dev/nj/solutions/ClazzTests.java)
+- [solution](./src/main/java/dev/nj/solutions/Clazz.java)
+- [test](./src/test/java/dev/nj/solutions/ClazzTests.java)
 
 </details>
 
